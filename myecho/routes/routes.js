@@ -20,9 +20,9 @@ var appRouter = function(app) {
 
     app.get("/echo", function(req, res) {
         var mock = {
-           "path": "/dateTime resource called"
+           "path": "/echo called"
         }
-        console.log(request.headers);
+        console.log(req.headers);
         return res.send(mock);
     });
 }
